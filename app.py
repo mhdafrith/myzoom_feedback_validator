@@ -3,8 +3,8 @@ from transformers import BertTokenizer, BertForSequenceClassification
 import gradio as gr
 
 # Load your fine-tuned model and tokenizer
-model = BertForSequenceClassification.from_pretrained("/Users/mohamedafrith/Desktop/mini_project_7_/saved_model")
-tokenizer = BertTokenizer.from_pretrained("/Users/mohamedafrith/Desktop/mini_project_7_/saved_model")
+model = BertForSequenceClassification.from_pretrained("saved_model")
+tokenizer = BertTokenizer.from_pretrained("saved_model")
 
 # Set device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
